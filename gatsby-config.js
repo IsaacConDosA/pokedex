@@ -5,5 +5,5 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   pathPrefix: "/pokedex",
-  plugins: ["gatsby-plugin-styled-components"],
+  plugins: ["gatsby-plugin-postcss"],
 };
