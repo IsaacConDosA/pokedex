@@ -15,7 +15,6 @@ type PokemonCellProps = {
 };
 
 const PokemonCell = ({ pokemonInfo }: PokemonCellProps): JSX.Element => {
-  console.log("pokemoninfo", pokemonInfo);
   const [pokemonDetails, setPokemonDetails] = useState<IPokemonDetails | null>(
     null
   );
@@ -40,7 +39,7 @@ const PokemonCell = ({ pokemonInfo }: PokemonCellProps): JSX.Element => {
   return (
     <div className="flex-1 mb-12 mt-0 mx-1.5 w-52 hover:animate-pokecard">
       <div className="bg-[#f2f2f2] p-2.5 rounded-md">
-        <img alt="A kitten" className="w-52" src={image} />
+        <img alt={name} className="w-52" src={image} />
       </div>
       <div className="flex-col pl-5">
         <span className="font-medium font-sans text-[#919191] text-xs">{`N.º${formatPokemonNumber(
